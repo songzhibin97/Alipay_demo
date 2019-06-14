@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>pay</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    物品名称: <input type="text" name="article">
+    金额:<input type="text" name="price">
+    <input type="submit">
+</form>
+</body>
+</html>
